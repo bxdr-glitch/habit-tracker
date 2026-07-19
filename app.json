@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Steady",
+    "slug": "steady-habit-tracker",
+    "description": "A calm, offline-first habit tracker for returning to what matters.",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "steady",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "us.buildfast.steady"
+    },
+    "android": {
+      "package": "us.buildfast.steady",
+      "adaptiveIcon": {
+        "backgroundColor": "#101510",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "color": "#C9F04A"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F2F0E7",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#0F1510",
+            "image": "./assets/splash-icon.png"
+          }
+        }
+      ]
+    ]
+  }
+}
